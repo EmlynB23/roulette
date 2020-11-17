@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette | Spin the Wheel!</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Calculator -->
+    <section id="calculator">
+        <div class="container box">
+            <h1>Martingale Roulette Emulator</h1>
+            <p id="number">-</p>
+            <button class="btn btn-warning" onclick="spinWheel()">Spin</button>
+        </div>
+
+        <div class="container streaks box">
+            <h3>Sequence</h3>
+            <p id="sequence">-</p>
+            <div class="counters">
+                <div class="container">
+                    <h3>Color Streak</h3>
+                    <p id="color-streak">-</p>
+                </div>
+                <div class="container">
+                    <h3>Odd / Even Streak</h3>
+                    <p id="odd-even-streak">-</p>
+                </div>
+                <div class="container">
+                    <h3>Over / Under 18.5 Streak</h3>
+                    <p id="over-under-streak">-</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Martingale method -->
+    <section id="about">
+        <div class="container">
+            <h1>What is the Martingale strategy?</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>In roulette, the Martingale strategy is a theory in which the gambler bets on a 1:1 return (usually red or black) and doubles the bet following each losing bet. The gambler will recoup all losees plus the additional initial stake <i><u>if</u></i> they eventually win.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>The issue with the Martingale strategy lies in the gamblers belief that one colour is more likely to land due to a streak on the other. While it can be a little tricky to grasp, this is in fact entirely false, as each spin is it's own self contained entity, independent of previous or future events. The odds of it being red or black remain exactly the same as the previous spin.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>It takes a far shorter streak than some gamblers anticipate to find themselves ruined using this method. Let's say you place a £5 bet on red, and it comes up black. So you follow the method and double up until you win. A streak of 10 losses would see you £5,115 down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ's -->
+    <section id="FAQ">
+        <div class="container">
+            <h1>FAQ's</h1>
+            <br>
+            <h4 class="question"><i>But I WILL win eventually, right?</i></h4>
+            <p class="answer">Actually, while highly improbable. It's completely possible you may not ever win within the current confines of human wealth. Infinite wealth makes the Martingale method a sure thing, but if you do have that much money, it's likely you're not reading this.</p>
+            <br>
+            <h4 class="question"><i>I have lots of money to fund this, so are my chances of winning better?</i></h4>
+            <p>Theoretically you're absolutely right. In reality, you're absolutely wrong. Casinos are wise to strategies like this in use and have table limits in place. So while you may have the capital to fund a very long losing streak, the table limit will likely stop you long before you can recoup your losses.</p>
+            <br>
+            <h4 class="question"><i>But I have a UNIQUE spin on the strategy?</i></h4>
+            <p class="answer">"I'm going to wait for a streak before I start betting", "I'm actually going to double my bet on WINNING spins", "But MY formula is different"...</p>
+            <p class="answer">Respectfully, no it's not. The Martingale method has been around long before Vegas even had a Strip, and so have it's variations. The house always wins, so while you may enjoy limited success with a variation there's a hundred others who've tried it and not been so lucky.</p>
+            <br>
+            <h4 class="question"><i>So what strategy should I use?</i></h4>
+            <p class="answer">The gambling industry is worth £14.3 billion in the UK alone. If there was a guaranteed strategy that ensured a gambler would ALWAYS come out on top against the house then the entire industry would crumble. Gamble for fun and not with anymore than you can afford to lose. When the fun stops, stop.</p>
+        </div>
+    </section>
+
+    <!-- JS Scripts -->
+    <script src="/wheel.js"></script>
+</body>
+</html>

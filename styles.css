@@ -1,0 +1,55 @@
+/* Body and div containers */
+body {
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: white;
+}
+
+.box {
+    border: solid 1px white;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ID's */
+#number {
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 60px;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+}
+
+/* Buttons */
+.btn-warning {
+    margin-top: 20px;
+}
+
+/* --------- Sections --------- */
+
+/* Calculator */
+#calculator {
+    background-color: #35654d;
+    text-align: center;
+    padding: 10px 0px 40px;
+}
+
+/* about */
+#about {
+    border-top: solid 4px gold;
+    border-bottom: solid 4px gold;
+    padding: 50px 15px;
+    color: black;
+}
+
+/* FAQ's */
+#FAQ {
+    background-color: #35654d;
+    padding: 30px 15px;
+}
